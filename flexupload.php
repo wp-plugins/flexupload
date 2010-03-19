@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: flexupload
-Plugin URI: http://wordpress.org/extend/plugins/flexupload/
+Plugin URI: http://code.google.com/p/wpflexupload/
 Description: Flash multifile uploader with multithreading.
 Author: Butin Kirill <kiryaka@gmail.com>
 Version: 0.0.3
