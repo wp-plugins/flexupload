@@ -15,9 +15,9 @@ Advantages:
 
 * Real multithreading and multiple file upload
 * From 50% to 300% faster upload speed (compared to usual uploaders)
-* Size of flash uploader swf file is only 95Kb!
 * No upload size limit. Data transferred by small pieces in many threads, so no more server side upload limit.
 * Full information - average and current speed, uploaded and total size and more.
+* Size of swf file is only 95Kb!
 
 Just try It, You'll Love It!
 
