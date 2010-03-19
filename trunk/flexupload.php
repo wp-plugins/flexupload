@@ -1,5 +1,14 @@
 <?php
 /*
+Plugin Name: flexupload
+Plugin URI: http://code.google.com/p/wpflexupload/
+Description: Flexupload multifile uploader with multithreading, resuming and compression.
+Author: Butin Kirill <kiryaka@gmail.com>
+Version: 0.0.1
+Author URI: http://code.google.com/p/wpflexupload/
+*/
+
+/*
  * Copyright 2010 Butin Kirill <kiryaka@gmail.com>
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,15 +29,6 @@
  * @author Kirill Butin <kiryaka@gmail.com>
  * @version 0.0.1
  */
-/*
-Plugin Name: flexupload
-Plugin URI: http://code.google.com/p/wpflexupload/
-Description: Flexupload multifile uploader with multithreading, resuming and compression.
-Author: Butin Kirill <kiryaka@gmail.com>
-Version: 0.0.1
-Author URI: http://code.google.com/p/wpflexupload/
-*/
-
 
 function flexupload_wp_upload_tabs ($tabs) {
 	$newtab = array('flexupload' => __('Flexupload','flexupload'));
