@@ -3,7 +3,7 @@ Contributors: kiryaka
 Tags: uploader, multifile, flash, gallery
 Requires at least: 2.5
 Tested up to: 2.9.2
-Stable tag: 0.1
+Stable tag: 0.0.3
 
 Flexupload is fast multiple file uploader wordpress plugin with multithreading.
 
@@ -12,6 +12,7 @@ Flexupload is fast multiple file uploader wordpress plugin with multithreading.
 The main goal of this plugin - is to create an alternative way of multipart/form-data uploaders. Flexupload use Action Message Format (AMF) instead of usual POST data. It allows to use really cool features like simultaneous file upload, multithreading, resuming, compression and so on… On the other hand it increases server load. Here is the table of advantages and disadvantages:
 
 Advantages:
+
 * Real multithreading give from 50% to 300% faster upload speed (compared to usual flash uploaders)
 * Size of flash uploader swf file is only 95Kb! There no image data at all!
 * No upload size limit. Data transferred by small pieces in many threads, so no more server side upload limit.
@@ -20,6 +21,7 @@ Advantages:
 * Full information - average and current speed, uploaded and total size and more.
 
 Disadvantages
+
 * It's mutch more resource intensive than usual upload.
 * It's required Flash Player 10
   
@@ -32,5 +34,5 @@ Unpack the zip file and upload the content into the folder wp-content/plugins/fl
 
 == Changelog ==
 
-= 0.1 =
+= 0.0.3 =
 * First beta version
