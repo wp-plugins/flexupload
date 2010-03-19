@@ -13,11 +13,10 @@ The main goal of this plugin - is to create an alternative way of multipart/form
 
 Advantages:
 
+* Multiple file upload
 * Real multithreading give from 50% to 300% faster upload speed (compared to usual flash uploaders)
-* Size of flash uploader swf file is only 95Kb! There no image data at all!
+* Size of flash uploader swf file is only 95Kb!
 * No upload size limit. Data transferred by small pieces in many threads, so no more server side upload limit.
-* Pause and resuming - you can stop uploading and free your inet channel for some time and then resume uploading.
-* Feasibility of image resizing on client size. Force for clients and configurable for admin users.
 * Full information - average and current speed, uploaded and total size and more.
 
 Disadvantages
