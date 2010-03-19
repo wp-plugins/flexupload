@@ -21,7 +21,7 @@
  * @version 0.0.1
  */
 /*
-Plugin Name: Flexupload
+Plugin Name: flexupload
 Plugin URI: http://code.google.com/p/wpflexupload/
 Description: Flexupload multifile uploader with multithreading, resuming and compression.
 Author: Butin Kirill <kiryaka@gmail.com>
