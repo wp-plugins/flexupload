@@ -1,11 +1,11 @@
 <?php
 /*
 Plugin Name: flexupload
-Plugin URI: http://code.google.com/p/wpflexupload/
-Description: Flexupload multifile uploader with multithreading, resuming and compression.
+Plugin URI: http://wordpress.org/extend/plugins/flexupload/
+Description: Flash multifile uploader with multithreading.
 Author: Butin Kirill <kiryaka@gmail.com>
 Version: 0.0.3
-Author URI: http://code.google.com/p/wpflexupload/
+Author URI: http://code.google.com/p/flexupload/
 */
 
 /*
@@ -27,7 +27,6 @@ Author URI: http://code.google.com/p/wpflexupload/
 /**
  * @package Flexupload multifile uploader
  * @author Kirill Butin <kiryaka@gmail.com>
- * @version 0.0.1
  */
 
 function flexupload_wp_upload_tabs ($tabs) {
