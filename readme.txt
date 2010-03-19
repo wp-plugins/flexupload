@@ -1,6 +1,6 @@
 === Plugin Name ===
 Contributors: kiryaka
-Tags: uploader, multifile, flash, gallery
+Tags: multifile, flash, uploader, media, images
 Requires at least: 2.5
 Tested up to: 2.9.2
 Stable tag: 0.0.3
