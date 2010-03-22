@@ -46,18 +46,23 @@ $flexupload_content .= <<<EOF
                 flashvars, params, attributes);
 			<!-- JavaScript enabled so display the flashContent div in case it is not replaced with a swf object. -->
 			swfobject.createCSS("#flashContent", "display:block;text-align:left;");
+	
+	gallery_text = '<li id="tab-gallery"><a class="current" href="/wp-admin/media-upload.php?post_id=339&amp;tab=gallery">Галерея (<span id="attachments-count">3</span>)</a></li>';
 			
 	finish_upload = function (tempFileName, realName){
 		document.getElementById('nulIframe').src = '/wp-content/plugins/flexupload/wp_flexupload.php?tmpname=' + tempFileName + '&realname=' + realName + '&post_id=' + post_id;
+		if( document.getElementById('attachments-count') ){
+			document.getElementById('tab-gallery').style.fontWeight = "bold";
+			document.getElementById('attachments-count').innerHTML = document.getElementById('attachments-count').innerHTML - -1;
+		}
 	}
         </script>
     <iframe id="nulIframe" style="display:none;width: 0px; height: 0px;"></iframe>
-    	<table width="100%" height="80%">
+    	<table width="100%" height="92%">
     	<tbody>
-    	<tr><td height="20%" valign="middle" align="center"><div style="width: 450px; color: #666666;">
-    	<b>WordPress Flexupload</b> plugin is based on <a href="http://code.google.com/p/flexupload/" target="_top">Flexupload project</a> 
-        	and it's still in deep beta, so NO GUARANTEE at all. Use At Your Own Risk.</div></td> </tr>
-    	<tr><td height="70%" valign="top">
+    	<tr><td height="20%" valign="middle" align="center">
+    	<div style="width: 500px; color: #666666;" id="firebug_warn">&nbsp;</div></td> </tr>
+    	<tr><td height="80%" valign="top">
         <!-- SWFObject's dynamic embed method replaces this alternative HTML content with Flash content when enough 
 			 JavaScript and Flash plug-in support is available. The div is initially hidden so that it doesn't show
 			 when JavaScript is disabled. -->
@@ -98,9 +103,22 @@ $flexupload_content .= <<<EOF
             </object>
 	    </noscript>		
 </td> </tr>
-	<tr><td height="10%" valign="middle" align="center"><div style="width: 500px; color: #666666;">
-	P.S. If you use Firebug - turn it off, or at least disable "Net" panel. Firebug can significantly slow down work of plugin or even crash FireFox.</div></td> </tr>
-
     	</tbody>
     	</table>
+    	
+<div style="position: absolute; bottom: 0px; right: 5px;color: #888888;font-size: 10px;">
+	If you like this plugin, you can 
+	<a style="font-size: 10px;text-decoration:none; color: #888888; font-weight: bold;" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&item_name=Buy Me a Beer for Flexupload WordPress plugin&hosted_button_id=LFQ9FC2ELS2TU" target="_top">
+		Buy Me a Beer
+	</a>
+</div>    	
+<script>
+	if (window.console && window.console.firebug) {
+		document.getElementById('firebug_warn').innerHTML = 'If you use Firebug - turn it off, or at least disable "Net" panel. Firebug can significantly slow down work of plugin or even crash FireFox.';
+	}
+	
+	if (document.getElementById('tab-gallery ') ){
+		document.getElementById('tab-gallery ').id = 'tab-gallery';
+	}
+</script>    	
 EOF;

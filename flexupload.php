@@ -2,10 +2,10 @@
 /*
 Plugin Name: flexupload
 Plugin URI: http://code.google.com/p/wpflexupload/
-Description: Flash multifile uploader with multithreading.
+Description: Flexupload multifile uploader with multithreading, resuming and compression.
 Author: Butin Kirill <kiryaka@gmail.com>
-Version: 0.0.3
-Author URI: http://code.google.com/p/flexupload/
+Version: 0.9
+Author URI: http://code.google.com/p/wpflexupload/
 */
 
 /*
@@ -27,11 +27,23 @@ Author URI: http://code.google.com/p/flexupload/
 /**
  * @package Flexupload multifile uploader
  * @author Kirill Butin <kiryaka@gmail.com>
+ * @version 0.9
  */
 
 function flexupload_wp_upload_tabs ($tabs) {
-	$newtab = array('flexupload' => __('Flexupload','flexupload'));
-	return array_merge($tabs,$newtab);
+	global $wpdb;
+	$tabs['flexupload'] = __('Flexupload','flexupload');	
+	if (isset($_REQUEST['post_id']) ) {
+		$attachments = intval( $wpdb->get_var( $wpdb->prepare( "SELECT count(*) FROM $wpdb->posts WHERE post_type = 'attachment' AND post_status != 'trash' AND post_parent = %d", $_REQUEST['post_id'] ) ) );
+		foreach ($tabs as $key => $val){
+			$arr[$key] = $val;
+			if($key == 'gallery' && !$attachments){
+				$arr['gallery '] = $val;
+				$arr['gallery '] = sprintf(__('Gallery (%s)'), "<span id='attachments-count'>0</span>");
+			}	
+		}
+	}
+	return $arr;
 }
 add_filter('media_upload_tabs', 'flexupload_wp_upload_tabs');
 
@@ -62,6 +74,5 @@ EOF;
 
 	return $content;
 }
-
 add_filter("media_buttons_context", "flexupload_add_media_button");
 ?>
