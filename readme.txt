@@ -1,4 +1,4 @@
-=== flexupload ===
+=== Flexupload multithreading uploader ===
 Contributors: kiryaka
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&item_name=Buy Me a Beer for Flexupload WordPress plugin&hosted_button_id=LFQ9FC2ELS2TU
 Tags: multifile, flash, uploader, media, images
