@@ -10,16 +10,16 @@ Multiple file uploader with multithreading. It's an alternative of standard mult
 
 == Description ==
 
-The main goal of this plugin - is to create an alternative way of multipart/form-data uploaders. Flexupload use Action Message Format (AMF) instead of usual POST data. It allows to use really cool features like simultaneous file upload, multithreading, resuming, compression and so on…
-
-Advantages:
+**Easy and fast flash uploader.**
 
 * Real multithreading and multiple file uploading
-* From 50% to 300% faster upload speed (compared to usual uploaders)
+* From 50% to 300% faster upload speed (compared to usual)
 * No upload size limit. Data transferred by small pieces in many threads, so no more server side upload limit.
 * Full information - average and current speed, uploaded and total size and more.
 * Size of swf file is only 95Kb!
-* No more "HTTP error" and other upload problems
+* No "HTTP error" and other upload problems
+
+The main goal of this plugin - is to create an alternative way of multipart/form-data uploaders. Flexupload use Action Message Format (AMF) instead of usual POST data. It allows to use really cool features like simultaneous file upload, multithreading, resuming, compression and so on…
 
 Just try It, You'll Love It!
 
