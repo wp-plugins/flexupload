@@ -95,7 +95,7 @@ $flexupload_content .= <<<EOF
                 	</p>
                 <!--<![endif]-->
                     <a href="http://www.adobe.com/go/getflashplayer">
-                        <img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash Player" />
+                        Get Adobe Flash player
                     </a>
                 <!--[if !IE]>-->
                 </object>
@@ -107,14 +107,24 @@ $flexupload_content .= <<<EOF
     	</table>
     	
 <div style="position: absolute; bottom: 0px; right: 5px;color: #888888;font-size: 10px;">
-	If you like this plugin, you can 
-	<a style="font-size: 10px;text-decoration:none; color: #888888; font-weight: bold;" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&item_name=Buy Me a Beer for Flexupload WordPress plugin&hosted_button_id=LFQ9FC2ELS2TU" target="_top">
-		Buy Me a Beer
-	</a>
+EOF
+;
+
+$flexupload_content .=  __('If you like this plugin, you can ', 'flexupload') .
+	'<a style="font-size: 10px;text-decoration:none; color: #888888; font-weight: bold;" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&item_name=Buy Me a Beer for Flexupload WordPress plugin&hosted_button_id=LFQ9FC2ELS2TU" target="_top">
+		'.__('Buy Me a Beer', 'flexupload').'
+	</a>' .
+<<<EOF
 </div>    	
 <script>
 	if (window.console && window.console.firebug) {
-		document.getElementById('firebug_warn').innerHTML = 'If you use Firebug - turn it off, or at least disable "Net" panel. Firebug can significantly slow down work of plugin or even crash FireFox.';
+		document.getElementById('firebug_warn').innerHTML = '
+EOF
+;
+
+$flexupload_content .= __('If you use Firebug - turn it off, or at least disable "Net" panel. Firebug can significantly slow down work of plugin or even crash FireFox.', 'flexupload') . 
+<<<EOF
+		';
 	}
 	
 	if (document.getElementById('tab-gallery ') ){

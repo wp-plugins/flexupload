@@ -31,6 +31,7 @@ Unpack the zip file and upload the content into the folder wp-content/plugins/fl
 
 == Upgrade Notice ==
 
+* Add russian localization.
 * Add gallerylink in the tab menu even if post havn't media yet.
 * Increment gallery media files counters.
 * Show firebug waring only in case of firebug existance.
