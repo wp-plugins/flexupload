@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: Flexupload multithreading uploader
+Plugin Name: Flexupload multithread uploader
 Plugin URI: http://code.google.com/p/wpflexupload/
 Description: Flexupload multifile uploader with multithreading, resuming and compression.
 Author: Butin Kirill <kiryaka@gmail.com>
@@ -26,7 +26,7 @@ Version: 0.9
  */
 
 /**
- * @package Flexupload multifile uploader
+ * @package Flexupload multithread uploader
  * @author Kirill Butin <kiryaka@gmail.com>
  * @version 0.9
  */
