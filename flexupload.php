@@ -6,6 +6,7 @@ Description: Flexupload multifile uploader with multithreading, resuming and com
 Author: Butin Kirill <kiryaka@gmail.com>
 Version: 0.9
 Author URI: http://code.google.com/p/wpflexupload/
+Domain Path: /lang/
 */
 
 /*
