@@ -14,13 +14,12 @@ The main goal of this plugin - is to create an alternative way of multipart/form
 
 Advantages:
 
-* No more "HTTP error"
-* No more "An error occurred in the upload. Please try again later"
 * Real multithreading and multiple file uploading
 * From 50% to 300% faster upload speed (compared to usual uploaders)
 * No upload size limit. Data transferred by small pieces in many threads, so no more server side upload limit.
 * Full information - average and current speed, uploaded and total size and more.
 * Size of swf file is only 95Kb!
+* No more "HTTP error" and other upload problems
 
 Just try It, You'll Love It!
 
