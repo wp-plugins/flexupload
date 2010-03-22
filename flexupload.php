@@ -4,9 +4,9 @@ Plugin Name: flexupload
 Plugin URI: http://code.google.com/p/wpflexupload/
 Description: Flexupload multifile uploader with multithreading, resuming and compression.
 Author: Butin Kirill <kiryaka@gmail.com>
-Version: 0.9
 Author URI: http://code.google.com/p/wpflexupload/
 Domain Path: /lang/
+Version: 0.9
 */
 
 /*
@@ -31,9 +31,12 @@ Domain Path: /lang/
  * @version 0.9
  */
 
+
+load_plugin_textdomain('flexupload', "/wp-content/plugins/flexupload/lang/");
+
 function flexupload_wp_upload_tabs ($tabs) {
 	global $wpdb;
-	$tabs['flexupload'] = __('Flexupload','flexupload');	
+	$tabs['flexupload'] = __('Flexupload', 'flexupload');
 	if (isset($_REQUEST['post_id']) ) {
 		$attachments = intval( $wpdb->get_var( $wpdb->prepare( "SELECT count(*) FROM $wpdb->posts WHERE post_type = 'attachment' AND post_status != 'trash' AND post_parent = %d", $_REQUEST['post_id'] ) ) );
 		foreach ($tabs as $key => $val){
