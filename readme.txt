@@ -1,6 +1,6 @@
 === Plugin Name ===
 Contributors: kiryaka
-Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=LFQ9FC2ELS2TU
+Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&item_name=Buy Me a Beer for Flexupload WordPress plugin&hosted_button_id=LFQ9FC2ELS2TU
 Tags: multifile, flash, uploader, media, images
 Requires at least: 2.5
 Tested up to: 2.9.2
