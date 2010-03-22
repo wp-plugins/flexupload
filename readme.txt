@@ -6,7 +6,7 @@ Requires at least: 2.5
 Tested up to: 2.9.2
 Stable tag: 0.0.3
 
-Flexupload is fast multiple file uploader wordpress plugin with multithreading.
+Multiple file uploader with multithreading. It's an alternative of standard multimedia uploader. Fast, informative and without "HTTP Error" or other.
 
 == Description ==
 
@@ -14,7 +14,9 @@ The main goal of this plugin - is to create an alternative way of multipart/form
 
 Advantages:
 
-* Real multithreading and multiple file upload
+* No more "HTTP error"
+* No more "An error occurred in the upload. Please try again later"
+* Real multithreading and multiple file uploading
 * From 50% to 300% faster upload speed (compared to usual uploaders)
 * No upload size limit. Data transferred by small pieces in many threads, so no more server side upload limit.
 * Full information - average and current speed, uploaded and total size and more.
