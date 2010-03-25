@@ -28,6 +28,7 @@ Unpack the zip file and upload the content into the folder wp-content/plugins/fl
 
 == Screenshots ==
 1. Multifile flash uploader in action
+2. Multifile flash uploader usage help
 
 == Upgrade Notice ==
 
