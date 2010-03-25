@@ -26,6 +26,8 @@ Just try It, You'll Love It!
 == Installation ==
 Unpack the zip file and upload the content into the folder wp-content/plugins/flexupload (the WordPress plugins folder). Note : Do not change the folder names.
 
+See usage help images in screenshots section.
+
 == Screenshots ==
 1. Multifile flash uploader in action
 2. Multifile flash uploader usage help
