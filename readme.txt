@@ -3,8 +3,8 @@ Contributors: kiryaka
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&item_name=Buy Me a Beer for Flexupload WordPress plugin&hosted_button_id=LFQ9FC2ELS2TU
 Tags: multifile, flash, uploader, media, images
 Requires at least: 2.5
-Tested up to: 2.9.2
-Stable tag: 0.9
+Tested up to: 3.0.1
+Stable tag: 0.9.1
 
 Multiple file uploader with multithreading. It's an alternative of standard multimedia uploader. Fast, informative and without "HTTP Error" or other.
 
@@ -16,7 +16,7 @@ Multiple file uploader with multithreading. It's an alternative of standard mult
 * From 50% to 300% faster upload speed (compared to usual)
 * No upload size limit. Data transferred by small pieces in many threads, so no more server side upload limit.
 * Full information - average and current speed, uploaded and total size and more.
-* Size of swf file is only 95Kb!
+* Size of swf file is only 75Kb!
 * No "HTTP error" and other upload problems
 
 The main goal of this plugin - is to create an alternative way of multipart/form-data uploaders. Flexupload use Action Message Format (AMF) instead of usual POST data. It allows to use really cool features like simultaneous file upload, multithreading, resuming, compression and so on…
@@ -40,6 +40,9 @@ See usage help images in screenshots section.
 * Show firebug waring only in case of firebug existance.
 
 == Changelog ==
+
+= 0.9.1 =
+* Fixed new flash version strange eror like #2046, #2032 etc
 
 = 0.9 =
 
