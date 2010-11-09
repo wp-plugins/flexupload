@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&item_name=Buy M
 Tags: multifile, flash, uploader, media, images
 Requires at least: 2.5
 Tested up to: 3.0.1
-Stable tag: 0.9.1
+Stable tag: 1.0
 
 Multiple file uploader with multithreading. It's an alternative of standard multimedia uploader. Fast, informative and without "HTTP Error" or other.
 
@@ -41,7 +41,7 @@ See usage help images in screenshots section.
 
 == Changelog ==
 
-= 0.9.1 =
+= 1.0 =
 * Fixed new flash version strange eror like #2046, #2032 etc
 
 = 0.9 =
